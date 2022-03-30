@@ -15,7 +15,7 @@ import EventNoteOutlinedIcon from '@mui/icons-material/EventNoteOutlined';
 import axiosReq from '../util/apiCalls'
 import storage from '../util/firebase';
 
-export default function index() {
+export default function home() {
   const [posts, setPosts] = useState([]);
   const [postDesc, setPostDesc] = useState("");
   const [postImg, setPostImg] = useState("");

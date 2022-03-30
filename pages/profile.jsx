@@ -14,7 +14,7 @@ import axiosReq from '../util/apiCalls'
 import storage from '../util/firebase';
 
 
-export default function index() {
+export default function profile() {
     const [category, setCategory] = useState('Tweets')
     const [posts, setPosts] = useState([])
     const [showEdit, setShowEdit] = useState(false)
