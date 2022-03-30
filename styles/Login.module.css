@@ -1,0 +1,113 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.form {
+  padding: 20px;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+}
+.form svg {
+  width: 32px;
+  height: 32px;
+  margin: auto;
+}
+.svgContainer {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.form h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputContainer input {
+  padding: 20px 15px;
+  margin-top: 25px;
+  border: 1px solid rgb(221, 208, 208);
+  border-radius: 5px;
+  display: block;
+  width: 60%;
+}
+.inputContainer span {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: rgb(29, 155, 240);
+  cursor: pointer;
+  font-size: 14px;
+  display: block;
+}
+.button {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 15px 0;
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+.forgotButton {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  padding: 15px 0;
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 20px;
+  border: 1px solid rgb(221, 208, 208);
+  cursor: pointer;
+}
+.register {
+  margin-top: 40px;
+  font-size: 12px;
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+.register a {
+  color: rgb(29, 155, 240);
+  text-decoration: underline;
+}
+@media screen and (max-width: 450px) {
+  .login {
+    background-color: white;
+  }
+  .form {
+    width: 100%;
+    height: 100%;
+    justify-content: unset;
+  }
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

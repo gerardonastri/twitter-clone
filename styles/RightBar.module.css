@@ -1,0 +1,141 @@
+.container {
+  max-width: 370px;
+  padding-left: 15px;
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #eff3f4;
+  padding: 10px;
+  border-radius: 1.5rem;
+  width: 350px;
+}
+.searchContainer svg {
+  width: 22px;
+  height: 22px;
+  opacity: 0.7;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+.searchContainer input {
+  background-color: inherit;
+  border: none;
+  max-width: 300px;
+}
+.searchContainer input:focus {
+  outline: none;
+}
+
+.trendsContainer {
+  margin-top: 30px;
+  background-color: #eff3f4;
+  padding: 10px 20px;
+  border-radius: 1.5rem;
+  width: 350px;
+}
+.trendsContainer h1 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.trend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.location {
+  font-size: 13px;
+  color: gray;
+}
+.hastag {
+  font-weight: 500;
+  font-size: 16px;
+}
+.tweets {
+  font-size: 13px;
+  color: gray;
+}
+
+.whoToFollow {
+  margin-top: 30px;
+  background-color: #eff3f4;
+  padding: 10px 20px;
+  border-radius: 1.5rem;
+  width: 350px;
+}
+.whoToFollow h1 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.followUser {
+  display: flex;
+  align-items: center;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.name b {
+  font-size: 14px;
+}
+.tag {
+  font-size: 12px;
+  color: gray;
+}
+
+.followImg {
+  background-color: #ef6c00;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-right: 10px;
+}
+.followBtn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 1.5rem;
+  font-size: 12spx;
+  font-weight: 600;
+}
+.utils {
+  max-width: 350px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.utils span {
+  font-size: 13px;
+  color: gray;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    display: none;
+  }
+}

@@ -1,0 +1,123 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.form {
+  padding: 20px;
+  border-radius: 1rem;
+  background-color: white;
+}
+.form svg {
+  width: 32px;
+  height: 32px;
+  margin: auto;
+}
+.svgContainer {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.form h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContainer input {
+  padding: 20px 15px;
+  margin-top: 25px;
+  border: 1px solid rgb(221, 208, 208);
+  border-radius: 5px;
+}
+.inputContainer span {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: rgb(29, 155, 240);
+  cursor: pointer;
+  font-size: 14px;
+}
+.date {
+  font-size: 14px;
+  color: rgb(15, 20, 25);
+  font-weight: 600;
+}
+.dateParagraph {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  max-width: 600px;
+  color: gray;
+}
+.selectsContainer {
+  display: flex;
+  margin-bottom: 100px;
+  width: 600px;
+}
+.select {
+  flex: 1;
+  border: 1px solid rgb(221, 208, 208);
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 20px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  cursor: pointer;
+}
+.select:focus {
+  outline: none !important;
+  border: 2px solid rgb(29, 155, 240);
+}
+.select option {
+  font-size: 14px;
+}
+.button {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 15px 0;
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  font-size: 14px;
+}
+@media screen and (max-width: 450px) {
+  .register {
+    background-color: white;
+  }
+  .form {
+    width: 100%;
+    height: 100%;
+    justify-content: unset;
+  }
+  .inputContainer {
+    display: flex;
+    margin-right: 10px;
+  }
+  .selectsContainer {
+    width: 95%;
+  }
+  .button {
+    width: 95%;
+  }
+  .svgContainer {
+    width: unset;
+  }
+}

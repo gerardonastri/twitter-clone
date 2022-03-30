@@ -1,0 +1,118 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.left {
+  flex: 1.2;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.left img {
+}
+.right {
+  flex: 1;
+  padding: 100px 20px;
+}
+.right svg {
+  width: 40px;
+  height: 40px;
+  color: rgb(29, 155, 240);
+}
+.right h1 {
+  margin-top: 50px;
+  font-size: 3.5rem;
+  font-family: TwitterChirpExtendedHeavy, Verdana, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.right h3 {
+  font-size: 1.5rem;
+}
+.signupBtn {
+  background-color: rgb(29, 155, 240);
+  font-size: 14px;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.right span {
+  display: block;
+  font-size: 10px;
+  margin-top: 10px;
+  max-width: 50%;
+}
+.right h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-top: 80px;
+}
+.loginBtn {
+  background-color: white;
+  font-size: 14px;
+  color: rgb(29, 155, 240);
+  padding: 10px 80px;
+  border: 1px solid rgb(207, 217, 222);
+  border-radius: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.loginBtn:hover,
+.signupBtn:hover {
+  opacity: 0.9;
+}
+.footer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 50px;
+  color: rgb(83, 100, 113);
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  z-index: 999;
+}
+.footer span {
+  margin-left: 10px;
+}
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .right {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .right h1 {
+    font-size: 2rem;
+  }
+  .right h3 {
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+  .right span {
+    max-width: 100%;
+  }
+  .right h4 {
+    margin-top: 50px;
+  }
+  .loginBtn {
+    padding: 10px 100px;
+  }
+  .footer span {
+    margin-bottom: 10px;
+  }
+}
