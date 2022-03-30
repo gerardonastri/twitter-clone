@@ -66,7 +66,7 @@ const RightBar = () => {
                 <h1>Who to follow</h1>
                 {posts.length > 5 ? (
                     posts.slice(0,5).map((post) => (
-                        <div className={styles.follow}>
+                        <div className={styles.follow}  key={post._id}>
                             <div className={styles.followUser}>
                             <Image className={styles.followImg} loader={post.user.img ? () => post.user.img : () => defaultSrc} src={post.user.img ?  post.user.img : defaultSrc} alt="" width={40} height={40} />
                               <span className={styles.name}>
@@ -79,7 +79,7 @@ const RightBar = () => {
                     ))
                 ) : (
                     posts.map((post) => (
-                        <div className={styles.follow}>
+                        <div className={styles.follow} key={post._id}>
                             <div className={styles.followUser}>
                             <Image className={styles.followImg} loader={post.user.img ? () => post.user.img : () => defaultSrc} src={post.user.img ?  post.user.img : defaultSrc} alt="" width={40} height={40} />
                               <span className={styles.name}>
