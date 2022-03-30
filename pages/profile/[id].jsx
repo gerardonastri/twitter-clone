@@ -12,7 +12,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import axiosReq from '../../util/apiCalls'
 
 
-export default function profile({user, posts}) {
+export default function Profile({user, posts}) {
     const [category, setCategory] = useState('Tweets')
     const currentUser = useSelector((state) => state.user.currentUser?.user);
     const router = useRouter()
