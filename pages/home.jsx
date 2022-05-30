@@ -83,7 +83,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.postsContainer}>
-              {posts.map((post) => (
+              {posts?.map((post) => (
                 <PostCard post={post} key={post._id} />
               ))}
             </div>

@@ -88,7 +88,7 @@ export default function Profile() {
             {/*CATEGORY*/}
             {category === 'Tweets' && (
                 <div className={styles.postsContainer}>
-                {posts.map((post) => (
+                {posts?.map((post) => (
                   <PostCard post={post} key={post._id} />
                 ))}
               </div>
@@ -96,7 +96,7 @@ export default function Profile() {
 
             {category === 'Tweets & replies' && (
                <div className={styles.postsContainer}>
-               {posts.map((post) => (
+               {posts?.map((post) => (
                  <PostCard post={post} key={post._id} />
                ))}
              </div>
