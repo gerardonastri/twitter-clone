@@ -60,7 +60,7 @@ export default function Profile() {
                     <h3>{user?.username}</h3>
                     <span className={styles.tag}>@{user?.username}</span>
                     <span className={styles.dateJoined}><CalendarMonthIcon /> Joined March 2022</span>
-                    <span className={styles.follow}><span><b>{user.following.length}</b> following</span><span><b>{user.followers.length}</b> Followers</span></span>
+                    <span className={styles.follow}><span><b>{user?.following.length}</b> following</span><span><b>{user?.followers.length}</b> Followers</span></span>
                 </div>
                 <div className={styles.actions}>
                     <span className={category === 'Tweets' ? styles.selected : ''} onClick={() => setCategory('Tweets')}>Tweets</span>
