@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const  BASE_URL = "http://localhost:3000/api/";
+const  BASE_URL = "http://twitter-clone.vercel.app/api/";
 
 const axiosReq = axios.create({
     baseURL:  BASE_URL
