@@ -61,10 +61,10 @@ export default function Profile() {
                 </span>
             </div>
             <div className={styles.user}>
-            <Image className={styles.followImg} loader={user.bgImg ? () => user.bgImg : () => src} src={user.bgImg ?  user.bgImg : src} alt="" width={600} height={200} />
+            <Image className={styles.followImg} loader={user?.bgImg ? () => user?.bgImg : () => src} src={user?.bgImg ?  user?.bgImg : src} alt="" width={600} height={200} />
                 <div className={styles.userContainer}>
                     <div className={styles.userImgContainer}>
-                    <Image className={styles.userImg} loader={user.img ? () => user.img : () => userSrc} src={user.img ?  user.img : userSrc} alt="" width={150} height={150} />
+                    <Image className={styles.userImg} loader={user?.img ? () => user?.img : () => userSrc} src={user?.img ?  user?.img : userSrc} alt="" width={150} height={150} />
                     </div>
                     {currentUser?.following.indexOf(user._id) === -1 ? (
                         <button className={styles.followBtn} onClick={follow}>Follow +</button>

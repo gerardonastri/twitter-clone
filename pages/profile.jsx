@@ -49,7 +49,7 @@ export default function Profile() {
                 </span>
             </div>
             <div className={styles.user}>
-                <Image className={styles.userBgImg} loader={() => user.bgImg} src={user?.bgImg} alt="" height={200} width={600} unoptimized />
+                <Image className={styles.userBgImg} loader={() => user?.bgImg} src={user?.bgImg} alt="" height={200} width={600} unoptimized />
                 <div className={styles.userContainer}>
                     <div className={showEdit ? `${styles.userImgContainer} ${styles.index}` : styles.userImgContainer}>
                         <Image className={showEdit ? `${styles.userImg} ${styles.index}` : styles.userImg} loader={() => user?.img} src={user?.img} alt="" height={150} width={150}  unoptimized />
