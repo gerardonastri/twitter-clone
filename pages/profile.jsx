@@ -44,15 +44,15 @@ export default function Profile() {
             <div className={styles.nav}>
                 <KeyboardBackspaceIcon />
                 <span className={styles.navUser}>
-                    <span className={styles.name}>{user.username}</span>
-                    <span className={styles.tweets}>{posts.length} Tweet</span>
+                    <span className={styles.name}>{user?.username}</span>
+                    <span className={styles.tweets}>{posts?.length} Tweet</span>
                 </span>
             </div>
             <div className={styles.user}>
-                <Image className={styles.userBgImg} loader={() => user.bgImg} src={user.bgImg} alt="" height={200} width={600} unoptimized />
+                <Image className={styles.userBgImg} loader={() => user.bgImg} src={user?.bgImg} alt="" height={200} width={600} unoptimized />
                 <div className={styles.userContainer}>
                     <div className={showEdit ? `${styles.userImgContainer} ${styles.index}` : styles.userImgContainer}>
-                        <Image className={showEdit ? `${styles.userImg} ${styles.index}` : styles.userImg} loader={() => user.img} src={user.img} alt="" height={150} width={150}  unoptimized />
+                        <Image className={showEdit ? `${styles.userImg} ${styles.index}` : styles.userImg} loader={() => user?.img} src={user?.img} alt="" height={150} width={150}  unoptimized />
                     </div>
                     <button className={styles.editBtn} onClick={() => setShowEdit(prev => !prev)}>Edit profile</button>
                 </div>
@@ -72,7 +72,7 @@ export default function Profile() {
             {/*CATEGORY*/}
             {category === 'Tweets' && (
                 <div className={styles.postsContainer}>
-                {posts.map((post) => (
+                {posts?.map((post) => (
                   <PostCard post={post} key={post._id} />
                 ))}
               </div>
@@ -80,7 +80,7 @@ export default function Profile() {
 
             {category === 'Tweets & replies' && (
                <div className={styles.postsContainer}>
-               {posts.map((post) => (
+               {posts?.map((post) => (
                  <PostCard post={post} key={post._id} />
                ))}
              </div>
@@ -101,7 +101,7 @@ export default function Profile() {
         </div>
         <RightBar style={showEdit && {opacity: '0.7'}} />
           {showEdit && (
-            <EditForm user={user} displayNone={!showEdit} />
+            <EditForm user={user && user} displayNone={!showEdit} />
           )}
     </div>
     </div>
