@@ -113,4 +113,13 @@
   .svgContainer{
     width: 100%;
   }
+  .inputContainer input {
+    width: 90%;
+  }
+  .button{
+    width: 90%;
+  }
+  .forgotButton{
+    width: 85%;
+  }
 }
