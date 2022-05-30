@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import LeftBar from '../components/LeftBar'
-//import RightBar from '../components/RightBar'
+import RightBar from '../component/RightBar'
 import PostCard from '../components/PostCard'
 import ImageOutlinedIcon from '@mui/icons-material/ImageOutlined';
 import GifBoxOutlinedIcon from '@mui/icons-material/GifBoxOutlined';
@@ -88,7 +88,7 @@ export default function Home() {
               ))}
             </div>
         </div>
-        {/*<RightBar/>*/}
+        <RightBar/>
     </div>
   )
 }

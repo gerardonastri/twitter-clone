@@ -5,7 +5,7 @@ import styles from '../../styles/Profile.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import LeftBar from '../../components/LeftBar'
-import RightBar from '../../components/RightBar'
+import RightBar from '../../component/RightBar'
 import PostCard from '../../components/PostCard'
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
