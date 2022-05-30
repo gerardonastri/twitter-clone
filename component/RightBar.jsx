@@ -70,8 +70,8 @@ const RightBar = () => {
                             <div className={styles.followUser}>
                             <Image className={styles.followImg} loader={post.user.img ? () => post.user.img : () => defaultSrc} src={post.user.img ?  post.user.img : defaultSrc} alt="" width={40} height={40} />
                               <span className={styles.name}>
-                                  <span><b style={{color: 'black'}}>{post.user.username}</b></span>
-                                  <span className={styles.tag}>{post.user.username}</span>
+                                  <span><b style={{color: 'black'}}>{post.user?.username}</b></span>
+                                  <span className={styles.tag}>{post.user?.username}</span>
                               </span>
                             </div>
                             <button className={styles.followBtn}>Follow</button>
@@ -83,8 +83,8 @@ const RightBar = () => {
                             <div className={styles.followUser}>
                             <Image className={styles.followImg} loader={post.user.img ? () => post.user.img : () => defaultSrc} src={post.user.img ?  post.user.img : defaultSrc} alt="" width={40} height={40} />
                               <span className={styles.name}>
-                                  <span><b style={{color: 'black'}}>{post.user.username}</b></span>
-                                  <span className={styles.tag}>{post.user.username}</span>
+                                  <span><b style={{color: 'black'}}>{post.user?.username}</b></span>
+                                  <span className={styles.tag}>{post.user?.username}</span>
                               </span>
                             </div>
                             <button className={styles.followBtn}>Follow</button>

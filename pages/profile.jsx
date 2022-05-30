@@ -57,8 +57,8 @@ export default function Profile() {
                     <button className={styles.editBtn} onClick={() => setShowEdit(prev => !prev)}>Edit profile</button>
                 </div>
                 <div className={styles.userInfo}>
-                    <h3>{user.username}</h3>
-                    <span className={styles.tag}>@{user.username}</span>
+                    <h3>{user?.username}</h3>
+                    <span className={styles.tag}>@{user?.username}</span>
                     <span className={styles.dateJoined}><CalendarMonthIcon /> Joined March 2022</span>
                     <span className={styles.follow}><span><b>{user.following.length}</b> following</span><span><b>{user.followers.length}</b> Followers</span></span>
                 </div>
