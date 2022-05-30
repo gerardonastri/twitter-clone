@@ -12,7 +12,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import axiosReq from '../../util/apiCalls'
 
 
-export default function Profile({user, posts}) {
+export default function Profile() {
     const [category, setCategory] = useState('Tweets')
     const [user, setUser] = useState(null)
     const [posts, setPosts] = useState(null)
