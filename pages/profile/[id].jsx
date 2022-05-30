@@ -14,12 +14,29 @@ import axiosReq from '../../util/apiCalls'
 
 export default function Profile({user, posts}) {
     const [category, setCategory] = useState('Tweets')
+    const [user, setUser] = useState(null)
+    const [posts, setPosts] = useState(null)
     const currentUser = useSelector((state) => state.user.currentUser?.user);
     const router = useRouter()
 
     const src = "https://i.pinimg.com/originals/8b/aa/5b/8baa5bb80ce306685aa46505ed299153.png";
     const userSrc = "https://pbs.twimg.com/profile_images/1505502323258413056/bClVJgvD_400x400.jpg";
-    console.log(currentUser.following.indexOf(user._id));
+    
+    useEffect(() => {
+      const getInitialProps = async () => {
+        const id = location.pathname.split('/')[2]
+        try { 
+          const userRes = await axiosReq.get(`/user/${id}?id=${id}`)
+          const postsRes =  await axiosReq.get(`posts/user?user=${id}`)
+          setUser(userRes.data)
+          setPosts(postsRes.data)
+          
+      } catch (error) {
+          console.log(error);
+      }
+      }
+      getInitialProps()
+    }, [])
 
     const follow = async () => {
         try {
@@ -102,11 +119,11 @@ export default function Profile({user, posts}) {
     </div>
   )
 }
-export const getServerSideProps = async ({params}) => {
+/*export const getServerSideProps = async ({params}) => {
     //const id = location.pathname.split('/')[2]
     try { 
-        const userRes = await axiosReq.get(`/user/${params.id}?id=${params.id}`)
-        const postsRes =  await axiosReq.get(`posts/user?user=${params.id}`)
+        const userRes = await axiosReq.get(`/user/${id}?id=${id}`)
+        const postsRes =  await axiosReq.get(`posts/user?user=${id}`)
         return {
             props: {
               user: userRes.data,
@@ -116,4 +133,4 @@ export const getServerSideProps = async ({params}) => {
     } catch (error) {
         console.log(error);
     }
-  };
+  };*/
